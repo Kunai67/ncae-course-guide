@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NCAE Course Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p id="logo"><span>NCAE</span> Course Guidance</p>
+    </header>
+
+    <div class="tutorial-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Welcome to the NCAE Course Guide!</h2>
+            </div>
+            <div class="modal-body">
+                <p>This is a program to help you pick an effective course to take on your Senior High School and College
+                    Education along with the Occupations that you can choose from.</p>
+                <p>Instructions: Please enter the information needed on each field coming from your NCAE Results.</p>
+                <button>Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="strand-form">
+            <h1>NCAE Course Guide Form</h1>
+            <fieldset>
+                <legend>TRACKS</legend>
+                <div>
+                    <label for="STEM">Science, Technology, Engineering and Math (STEM)</label>
+                    <input type="text" id="STEM" name="STEM"
+                        placeholder="Percentile Rank">
+                </div>
+                <div>
+                    <label for="ABM">Accountancy, Business and Management (ABM)</label>
+                    <input type="text" id="ABM" name="ABM" placeholder="Percentile Rank">
+                </div>
+                <div>
+                    <label for="HUMSS">Humanities and Social Sciences (HUMSS)</label>
+                    <input type="text" id="HUMSS" name="HUMSS" placeholder="Percentile Rank">
+                </div>
+                <div>
+                    <label for="TVL">Technical-Vocational-Livelihood</label>
+                    <input type="text" id="TVL" name="TVL" placeholder="Percentile Rank">
+                </div>
+                <div>
+                    <label for="SPO">Sports Track</label>
+                    <input type="text" id="SPO" name="SPO" placeholder="Percentile Rank">
+                </div>
+                <div>
+                    <label for="ART">Arts and Design Track</label>
+                    <input type="text" id="ART" name="ART" placeholder="Percentile Rank">
+                </div>
+            </fieldset>
+        </form>
+
+        <form id="gsa-form">
+            <fieldset>
+                <legend>GENERAL SCHOLASTIC APTITUDE (GSA)</legend>
+                <div>
+                    <label for="SA">Scientific Ability (SA)</label>
+                    <input type="text" id="SA" name="SA" placeholder="Scientific Ability (SA)">
+                </div>
+                <div>
+                    <label for="RC">Reading Comprehension (RC)</label>
+                    <input type="text" id="RC" name="RC" placeholder="Reading Comprehension (RC)">
+                </div>
+                <div>
+                    <label for="VA">Verbal Ability (VA)</label>
+                    <input type="text" id="VA" name="VA" placeholder="Verbal Ability (VA)">
+                </div>
+                <div>
+                    <label for="MA">Mathematical Ability (MA)</label>
+                    <input type="text" id="MA" name="MA" placeholder="Mathematical Ability (MA)">
+                </div>
+                <div>
+                    <label for="LRA">Logical Reasoning Ability (LRA)</label>
+                    <input type="text" id="LRA" name="LRA" placeholder="Logical Reasoning Ability (LRA)">
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+        <form id="op-form">
+            <fieldset>
+                <legend>Occupational Preferences</legend>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="display">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

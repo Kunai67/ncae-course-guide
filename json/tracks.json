@@ -1,0 +1,32 @@
+{
+    "STEM": {
+        "name": "Science, Technology, Engineering and Mathematics",
+        "desc": "Science, Technology, Engineering, and Mathematics are intertwining disciplines when applied in the real world. The difference of the STEM curriculum with the other strands and tracks is the focus on advanced concepts and topics.",
+        "courses": ["SCI", "NAT", "AQC", "ENG"]
+    },
+    "ABM": {
+        "name": "Accountancy, and Business Management",
+        "desc": "The Accountancy, Business and Management (ABM) strand would focus on the basic concepts of financial management, business management, corporate operations, and all things that are accounted for.",
+        "courses": ["BUS"]
+    },
+    "HUMSS": {
+        "name": "Humanities and Social Sciences",
+        "desc": "The HUMMS strand is designed for those who wonder what is on the other side of the wall. In other words, you are ready to take on the world and talk to a lot of people. This is for those who are considering taking up journalism, communication arts, liberal arts, education, and other social science-related courses in college.",
+        "courses": ["PRS", "PES", "MIL", "MED", "CMS", "SPI"]
+    },
+    "TVL": {
+        "name": "Technical-Vocational-Livelihood",
+        "desc": "If you are really not sure if you will be able to pursue any degree after Senior High or if you want to earn money immediately after graduation, then this track is for you. Even without college, Technical-Vocational-Livelihood track will equip you with job-ready skills in the future. This track also invests primarily on skills that can gain you requisite COCs (Certificates of Competency) and NCs (National Certifications) which would be essential when looking for better career opportunities in agriculture, electronics, and trade. This is also important when applying abroad where the skills you gain would prepare you as you join the workforce.",
+        "courses": ["COM", "ARC", "FAS"]
+    },
+    "SPO": {
+        "name": "Sports",
+        "desc": "The Sports Track aims to give you understanding of the basic principles and techniques in relation to physical education and recreation. It will also offer you discuss various factors that affect social, psychological, and cognitive development in sports leadership and management.",
+        "courses": []
+    },
+    "ART": {
+        "name": "Arts and Design",
+        "desc": "The Arts & Design track will prepare you as you wander around the design, performative, and creative industry. What this track aims is to get you a career in the creative field after you graduate. Breaking the stereotype that is there no careers in this industry, you’ll be surprised how fun the Arts and Design world can be.",
+        "courses": ["ARC", "ART", "FAS"]
+    }
+}

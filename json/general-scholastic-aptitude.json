@@ -1,0 +1,27 @@
+{
+    "SA": {
+        "name": "Scientific Ability",
+        "desc": "Scientific literacy or science literacy encompasses written, numerical, and digital literacy as they pertain to understanding science, its methodology, observations, and theories. Scientific literacy is chiefly concerned with an understanding of the scientific method, units and methods of measurement, empiricism and understanding of statistics in particular correlations and qualitative versus quantitative observations and aggregate statistics, as well as a basic understanding of core scientific fields, such as physics, chemistry, biology, ecology, geology and computation.",
+        "courses": []
+    },
+    "RC": {
+        "name": "Reading Comprehension",
+        "desc": "Reading comprehension is the ability to process text, understand its meaning, and to integrate with what the reader already knows. Fundamental skills required in efficient reading comprehension are knowing meaning of words, ability to understand meaning of a word from discourse context, ability to follow organization of passage and to identify antecedents and references in it, ability to draw inferences from a passage about its contents, ability to identify the main thought of a passage, ability to answer questions answered in a passage, ability to recognize the literary devices or propositional structures used in a passage and determine its tone, to understand the situational mood (agents, objects, temporal and spatial reference points, casual and intentional inflections, etc.) conveyed for assertions, questioning, commanding, refraining etc. and finally ability to determine writer's purpose, intent and point of view, and draw inferences about the writer (discourse-semantics).",
+        "courses": []
+    },
+    "VA": {
+        "name": "Verbal Ability",
+        "desc": "Verbal Ability is the defined as the capability of a person in expressing ideas using words in a clearly understandable manner.",
+        "courses": []
+    },
+    "MA": {
+        "name": "Mathematical Ability",
+        "desc": "Mathematical ability is a human construct, which may be defined cognitively or pragmatically, depending on the purpose of definitions. ... From this perspective, it can be defined as the ability to perform mathematical tasks and to effectively solve given mathematical problems.",
+        "courses": []
+    },
+    "LRA": {
+        "name": "Logical Reasoning Ability",
+        "desc": "Two kinds of logical reasoning can be distinguished in addition to formal deduction: induction and abduction. Given a precondition or premise, a conclusion or logical consequence and a rule or material conditional that implies the conclusion given the precondition.",
+        "courses": []
+    }
+}

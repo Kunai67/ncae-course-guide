@@ -1,0 +1,197 @@
+{
+    "SCI": {
+        "name": "Science",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Medicine",
+            "course": ["Optometrist", "Doctor of Medicine", "Cardiologist", "Oncologist", "Radiologist", "Orthopedic Surgeon", "Surgeon", "Dermatologist", "Dentist", "Veterinary Medicine", "Forensic Analyst"]
+        }, {
+            "group": "Allied Medicine",
+            "course": ["Speech Pathologist", "Physical Therapist", "Occupational Therapist"]
+        }, {
+            "group": "Allied Health Professions",
+            "course": ["Nurse", "Medical Technologist", "Geneticist", "DNA Analyst", "Pharmacist", "Food Technologist"]
+        }, {
+            "group": "Hospital Administration",
+            "course": ["Speech Pathologist", "Physical Therapist", "Occupational Therapist"]
+        }, {
+            "group": "Health and Wellness Support Staff",
+            "course": ["Therapy Assistant", "Nursing Aide", "Caregiver", "Laboratory Aide", "Laboratory Encoder", "X-ray Technician", "Laboratory Technician", "Medical Transcriptionist", "Medical Secretary", "Medical Sales Representative", "Medical Advertising Representative", "Hospital Utility Worker", "Gym Instructor", "Spa Aide"]
+        }]
+    },
+    "NAT": {
+        "name": "Natural Science",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Specialized Areas",
+            "course": ["Biologist", "Botanist", "Zoologist", "Chemist", "Geologist", "Geographer", "Volcanologist", "Seismologist"]
+        }]
+    },
+    "AQC": {
+        "name": "Aquaculture and Agriculture/Forestry",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Specialized Areas",
+            "course": ["Aquaculturist", "Agriculturist", "Forest Ranger", "Floriculturist", "Herbologist"]
+        }, {
+            "group": "Support Staff",
+            "course": ["Fishing Boat Captain", "Fishing Crew", "Forester", "Canning Worker", "Plant Hobbyist"]
+        }]
+    },
+    "ENG": {
+        "name": "Engineering",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Specialized Areas",
+            "course": ["Mechanical Engineer", "Biological Engineer", "Civil Engineer", "Safety Engineer", "Mining Engineer", "Electrical Engineer", "Agricultural Engineer", "Chemical Engineer", "Marine Engineer", "Structural Engineer"]
+        }, {
+            "group": "Support Staff",
+            "course": ["CP-Radio Technician", "Electronic Technician", "Aircon Technician", "Car Auto Mechanic"]
+        }]
+    },
+    "BUS": {
+        "name": "Business and Finance / Commerce",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Finance",
+            "course": ["Economist", "Banker", "Financial Analyst", "Accountant", "Budget Officer", "Bookkeeper"]
+        }, {
+            "group": "Business",
+            "course": ["HR Manager", "Sales Manager", "Warehouse Supervisor", "Stock Room Supervisor", "Marketing Officer", "Advertising Executive", "Statistician", "Actuarial Mathematician", "Real Estate Broker"]
+        }, {
+            "group": "Support Staff",
+            "course": ["On-line Sales Agent", "Call Center Agent", "Sales Clerk", "Sales Representative", "Store Keeper", "Cashier", "Sales Record Officer", "Office Clerk", "Sales Promoter", "Promo Merchandiser", "Small Scale Store Owner", "Security Guard"]
+        }]
+    },
+    "PRS": {
+        "name": "Professional Services",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Law",
+            "course": ["Judge", "Lawyer", "Legal Associate", "Clerk of Court", "Legal Secretary/Clerk"]
+        }, {
+            "group": "Education",
+            "course": ["Pre-school Teacher", "Elementary School Teacher", "High School Teacher", "College Professor", "Professor in Graduate School, Master's or Ph.D Courses"]
+        }, {
+            "group": "School Administration",
+            "course": ["School Head", "Registrar"]
+        }, {
+            "group": "Guidance and Counseling",
+            "course": ["Guidance Counselor"]
+        }, {
+            "group": "Support Staff",
+            "course": ["Librarian", "Teacher Aide", "Technical-Vocational Aide", "School Clerk", "School Janitor", "School Canteen Helper", "School Security Officer"]
+        }]
+    },
+    "PES": {
+        "name": "Personal Services",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Transportation and Travel",
+            "course": ["Aviation-Pilot", "Air Tower Comptroller", "Air-Radio Comptroller", "Marine Ship Captain", "Chief Mate"]
+        }, {
+            "group": "Support Staff",
+            "course": ["Flight Attendant", "Aircraft Technician", "Airline Ground Crew", "Seaman", "Messman/Cook", "Driver", "Ticketing Clerk"]
+        }, {
+            "group": "Hotel Administration",
+            "course": ["Hotel and HR Manager", "HR Supervisor", "Hotel/Building Maintenance Supervisor"]
+        }, {
+            "group": "Hotel Support Staff",
+            "course": ["Front Desk Clerk", "Reservation Clerk", "Billing Clerk", "Chef/Pastry/Bread Maker", "Barista", "Hotel Attendant", "Elevator Attendant", "Chambermaid"]
+        }, {
+            "group": "Tourism Support Staff",
+            "course": ["Travel Agent", "Tour Guide"]
+        }]
+    },
+    "COM": {
+        "name": "Computers and Technology",
+        "desc": "",
+        "courseGroups": [{
+            "group": "IT and Cyber Services",
+            "course": ["Web Designer", "Web Analyst", "Web Programmer", "Software Programmer", "Computer Games Programmer", "IT Instructor", "Database Analyst"]
+        }, {
+            "group": "Support Staff",
+            "course": ["Animator", "Data Encoder", "Computer Technician", "Computer Clerk", "Computer Aide", "Computer Drafter", "IT Sales Clerk"]
+        }]
+    },
+    "MED": {
+        "name": "Media and Communication",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Broadcasting Specialist",
+            "course": ["Mass Communication Journalist", "Newscaster", "News Editor", "Radio Announcer", "Sound Engineer"]
+        }, {
+            "group": "Support Staff",
+            "course": ["TV Operator", "Cameraman", "Radio Technician", "Dubber", "Voice Over Talent", "Proof Reader", "Caricaturist", "Comics Illustrator", "Photographer"]
+        }]
+    },
+    "CMS": {
+        "name": "Community Services",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Community Governance",
+            "course": ["Barangay Officer", "Barangay Health Official", "Social Worker"]
+        }, {
+            "group": "Community Support Staff",
+            "course": ["Barangay Cleaners", "Barangay Clerk", "Barangay Aide", "Rescue Volunteer"]
+        }]
+    },
+    "ARC": {
+        "name": "Architecture and Construction",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Professional Services",
+            "course": ["Architect", "Landscape Architect", "Interior Designer", "Surveyor", "Real Estate Developer"]
+        }, {
+            "group": "Construction Service & Support Staff",
+            "course": ["Foreman", "Mason", "Pipe Welder", "Painter", "Wood Carver", "Iron Grill Welder", "Pottery Maker", "Building Aide", "Landscaper", "Carpenter"]
+        }]
+    },
+    "ART": {
+        "name": "The Arts",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Performing Arts",
+            "course": ["Director", "Artist/Actor", "Film Maker", "Entertainer"]
+        }, {
+            "group": "Support Staff",
+            "course": ["Set Designer", "Lights Designer", "Costumer Designer"]
+        }, {
+            "group": "Painting, Music & Literary Works",
+            "course": ["Musical Composer", "Musical Arranger", "Book Author", "Water Color Painter"]
+        }]
+    },
+    "FAS": {
+        "name": "Fashion",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Garments, Linens and Textile",
+            "course": ["Fashion Designer", "Master Cutter", "T-shirt Designer", "Silk Screen Maker", "Textile Technician", "Fabric Wholesaler", "Curtains/Beddings Sewer"]
+        }, {
+            "group": "Hairstyle, Cosmetics and Other Parlor Services",
+            "course": ["Make-up Artist", "Hair Stylist", "Hair Cutter", "Hair Spa Aide", "Manicurist"]
+        }, {
+            "group": "Jewelry and Fashion Accessories",
+            "course": ["Jewelry Maker/Goldsmith", "Beadworks Maker", "Shoe Maker", "Bag Maker"]
+        }]
+    },
+    "MIL": {
+        "name": "Military and Law Enforcement",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Military Services",
+            "course": ["Military Officer", "Air Force Officer", "Military Training Officer", "Camp Strategist"]
+        }, {
+            "group": "Law Enforcement",
+            "course": ["Police Officer", "Prison Warden", "Police Desk Officer", "Investigator", "Police Aide", "Traffic Enforcer", "Criminologist", "Fingerprint Analyst"]
+        }]
+    },
+    "SPI": {
+        "name": "Spiritual Vocation",
+        "desc": "",
+        "courseGroups": [{
+            "group": "Specialized Areas",
+            "course": ["Priest/Pastor/Imam", "Spiritual Counselor/Nun", "Charity Worker"]
+        }]
+    }
+}

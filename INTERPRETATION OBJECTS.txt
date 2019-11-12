@@ -1,0 +1,590 @@
+// INTERPRETATION OBJECTS
+const GSAObj = {
+    SA: {
+        name: "Scientific Ability",
+        desc: "Scientific literacy or science literacy encompasses written, numerical, and digital literacy as they pertain to understanding science, its methodology, observations, and theories. Scientific literacy is chiefly concerned with an understanding of the scientific method, units and methods of measurement, empiricism and understanding of statistics in particular correlations and qualitative versus quantitative observations and aggregate statistics, as well as a basic understanding of core scientific fields, such as physics, chemistry, biology, ecology, geology and computation.",
+        courses: []
+    },
+    RC: {
+        name: "Reading Comprehension",
+        desc: "Reading comprehension is the ability to process text, understand its meaning, and to integrate with what the reader already knows. Fundamental skills required in efficient reading comprehension are knowing meaning of words, ability to understand meaning of a word from discourse context, ability to follow organization of passage and to identify antecedents and references in it, ability to draw inferences from a passage about its contents, ability to identify the main thought of a passage, ability to answer questions answered in a passage, ability to recognize the literary devices or propositional structures used in a passage and determine its tone, to understand the situational mood (agents, objects, temporal and spatial reference points, casual and intentional inflections, etc.) conveyed for assertions, questioning, commanding, refraining etc. and finally ability to determine writer's purpose, intent and point of view, and draw inferences about the writer (discourse-semantics).",
+        courses: []
+    },
+    VA: {
+        name: "Verbal Ability",
+        desc: "Verbal Ability is the defined as the capability of a person in expressing ideas using words in a clearly understandable manner.",
+        courses: []
+    },
+    MA: {
+        name: "Mathematical Ability",
+        desc: "Mathematical ability is a human construct, which may be defined cognitively or pragmatically, depending on the purpose of definitions. ... From this perspective, it can be defined as the ability to perform mathematical tasks and to effectively solve given mathematical problems.",
+        courses: []
+    },
+    LRA: {
+        name: "Logical Reasoning Ability",
+        desc: "Two kinds of logical reasoning can be distinguished in addition to formal deduction: induction and abduction. Given a precondition or premise, a conclusion or logical consequence and a rule or material conditional that implies the conclusion given the precondition.",
+        courses: []
+    },
+}
+
+const ATObj = {
+    STEM: {
+        name: "Science, Technology, Engineering and Mathematics",
+        desc: "Science, Technology, Engineering, and Mathematics are intertwining disciplines when applied in the real world. The difference of the STEM curriculum with the other strands and tracks is the focus on advanced concepts and topics.",
+        courses: ["SCI", "NAT", "AQC", "ENG"]
+    },
+    ABM: {
+        name: "Accountancy, and Business Management",
+        desc: "The Accountancy, Business and Management (ABM) strand would focus on the basic concepts of financial management, business management, corporate operations, and all things that are accounted for.",
+        courses: ["BUS"]
+    },
+    HUMSS: {
+        name: "Humanities and Social Sciences",
+        desc: "The HUMMS strand is designed for those who wonder what is on the other side of the wall. In other words, you are ready to take on the world and talk to a lot of people. This is for those who are considering taking up journalism, communication arts, liberal arts, education, and other social science-related courses in college.",
+        courses: ["PRS", "PES", "MIL", "MED", "CMS", "SPI"]
+    },
+    TVL: {
+        name: "Technical-Vocational-Livelihood",
+        desc: "If you are really not sure if you will be able to pursue any degree after Senior High or if you want to earn money immediately after graduation, then this track is for you. Even without college, Technical-Vocational-Livelihood track will equip you with job-ready skills in the future. This track also invests primarily on skills that can gain you requisite COCs (Certificates of Competency) and NCs (National Certifications) which would be essential when looking for better career opportunities in agriculture, electronics, and trade. This is also important when applying abroad where the skills you gain would prepare you as you join the workforce.",
+        courses: ["COM", "ARC", "FAS"]
+    },
+    SPO: {
+        name: "Sports",
+        desc: "The Sports Track aims to give you understanding of the basic principles and techniques in relation to physical education and recreation. It will also offer you discuss various factors that affect social, psychological, and cognitive development in sports leadership and management.",
+        courses: []
+    },
+    ART: {
+        name: "Arts and Design",
+        desc: "The Arts & Design track will prepare you as you wander around the design, performative, and creative industry. What this track aims is to get you a career in the creative field after you graduate. Breaking the stereotype that is there no careers in this industry, you’ll be surprised how fun the Arts and Design world can be.",
+        courses: ["ARC", "ART", "FAS"]
+    },
+}
+
+const OPObj = {
+    SCI: {
+        name: "Science",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Medicine",
+                [
+                    "Optometrist", "Doctor of Medicine", "Cardiologist", "Oncologist", "Radiologist", "Orthopedic Surgeon", "Surgeon", "Dermatologist", "Dentist", "Veterinary Medicine", "Forensic Analyst"
+                ]
+            ),
+            createCourseGroup(
+                "Allied Medicine",
+                [
+                    "Speech Pathologist",
+                    "Physical Therapist",
+                    "Occupational Therapist"
+                ]
+            ),
+            createCourseGroup(
+                "Allied Health Professions",
+                [
+                    "Nurse",
+                    "Medical Technologist",
+                    "Geneticist",
+                    "DNA Analyst",
+                    "Pharmacist",
+                    "Food Technologist"
+                ]
+            ),
+            createCourseGroup(
+                "Hospital Administration",
+                [
+                    "Speech Pathologist",
+                    "Physical Therapist",
+                    "Occupational Therapist"
+                ]
+            ),
+            createCourseGroup(
+                "Health and Wellness Support Staff",
+                [
+                    "Therapy Assistant",
+                    "Nursing Aide",
+                    "Caregiver",
+                    "Laboratory Aide",
+                    "Laboratory Encoder",
+                    "X-ray Technician",
+                    "Laboratory Technician",
+                    "Medical Transcriptionist",
+                    "Medical Secretary",
+                    "Medical Sales Representative",
+                    "Medical Advertising Representative",
+                    "Hospital Utility Worker",
+                    "Gym Instructor",
+                    "Spa Aide"
+                ]
+            ),
+        ]
+    },
+    NAT: {
+        name: "Natural Science",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Specialized Areas",
+                [
+                    "Biologist",
+                    "Botanist",
+                    "Zoologist",
+                    "Chemist",
+                    "Geologist",
+                    "Geographer",
+                    "Volcanologist",
+                    "Seismologist"
+                ]
+            ),
+        ]
+    },
+    AQC: {
+        name: "Aquaculture and Agriculture/Forestry",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Specialized Areas",
+                [
+                    "Aquaculturist",
+                    "Agriculturist",
+                    "Forest Ranger",
+                    "Floriculturist",
+                    "Herbologist",
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "Fishing Boat Captain",
+                    "Fishing Crew",
+                    "Forester",
+                    "Canning Worker",
+                    "Plant Hobbyist"
+                ]
+            ),
+        ]
+    },
+    ENG: {
+        name: "Engineering",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Specialized Areas",
+                [
+                    "Mechanical Engineer",
+                    "Biological Engineer",
+                    "Civil Engineer",
+                    "Safety Engineer",
+                    "Mining Engineer",
+                    "Electrical Engineer",
+                    "Agricultural Engineer",
+                    "Chemical Engineer",
+                    "Marine Engineer",
+                    "Structural Engineer"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "CP-Radio Technician",
+                    "Electronic Technician",
+                    "Aircon Technician",
+                    "Car Auto Mechanic"
+                ]
+            ),
+        ]
+    },
+    BUS: {
+        name: "Business and Finance / Commerce",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Finance",
+                [
+                    "Economist",
+                    "Banker",
+                    "Financial Analyst",
+                    "Accountant",
+                    "Budget Officer",
+                    "Bookkeeper"
+                ]
+            ),
+            createCourseGroup(
+                "Business",
+                [
+                    "HR Manager",
+                    "Sales Manager",
+                    "Warehouse Supervisor",
+                    "Stock Room Supervisor",
+                    "Marketing Officer",
+                    "Advertising Executive",
+                    "Statistician",
+                    "Actuarial Mathematician",
+                    "Real Estate Broker"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "On-line Sales Agent",
+                    "Call Center Agent",
+                    "Sales Clerk",
+                    "Sales Representative",
+                    "Store Keeper",
+                    "Cashier",
+                    "Sales Record Officer",
+                    "Office Clerk",
+                    "Sales Promoter",
+                    "Promo Merchandiser",
+                    "Small Scale Store Owner",
+                    "Security Guard"
+                ]
+            ),
+        ]
+    },
+    PRS: {
+        name: "Professional Services",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Law",
+                [
+                    "Judge",
+                    "Lawyer",
+                    "Legal Associate",
+                    "Clerk of Court",
+                    "Legal Secretary/Clerk"
+                ]
+            ),
+            createCourseGroup(
+                "Education",
+                [
+                    "Pre-school Teacher",
+                    "Elementary School Teacher",
+                    "High School Teacher",
+                    "College Professor",
+                    "Professor in Graduate School, Master's or Ph.D Courses"
+                ]
+            ),
+            createCourseGroup(
+                "School Administration",
+                [
+                    "School Head",
+                    "Registrar"
+                ]
+            ),
+            createCourseGroup(
+                "Guidance and Counseling",
+                [
+                    "Guidance Counselor"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "Librarian",
+                    "Teacher Aide",
+                    "Technical-Vocational Aide",
+                    "School Clerk",
+                    "School Janitor",
+                    "School Canteen Helper",
+                    "School Security Officer"
+                ]
+            ),
+        ]
+    },
+    PES: {
+        name: "Personal Services",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Transportation and Travel",
+                [
+                    "Aviation-Pilot",
+                    "Air Tower Comptroller",
+                    "Air-Radio Comptroller",
+                    "Marine Ship Captain",
+                    "Chief Mate"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "Flight Attendant",
+                    "Aircraft Technician",
+                    "Airline Ground Crew",
+                    "Seaman",
+                    "Messman/Cook",
+                    "Driver",
+                    "Ticketing Clerk"
+                ]
+            ),
+            createCourseGroup(
+                "Hotel Administration",
+                [
+                    "Hotel and HR Manager",
+                    "HR Supervisor",
+                    "Hotel/Building Maintenance Supervisor"
+                ]
+            ),
+            createCourseGroup(
+                "Hotel Support Staff",
+                [
+                    "Front Desk Clerk",
+                    "Reservation Clerk",
+                    "Billing Clerk",
+                    "Chef/Pastry/Bread Maker",
+                    "Barista",
+                    "Hotel Attendant",
+                    "Elevator Attendant",
+                    "Chambermaid"
+                ]
+            ),
+            createCourseGroup(
+                "Tourism Support Staff",
+                [
+                    "Travel Agent",
+                    "Tour Guide"
+                ]
+            ),
+        ]
+    },
+    COM: {
+        name: "Computers and Technology",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "IT and Cyber Services",
+                [
+                    "Web Designer",
+                    "Web Analyst",
+                    "Web Programmer",
+                    "Software Programmer",
+                    "Computer Games Programmer",
+                    "IT Instructor",
+                    "Database Analyst"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "Animator",
+                    "Data Encoder",
+                    "Computer Technician",
+                    "Computer Clerk",
+                    "Computer Aide",
+                    "Computer Drafter",
+                    "IT Sales Clerk"
+                ]
+            ),
+        ]
+    },
+    MED: {
+        name: "Media and Communication",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Broadcasting Specialist",
+                [
+                    "Mass Communication Journalist",
+                    "Newscaster",
+                    "News Editor",
+                    "Radio Announcer",
+                    "Sound Engineer"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "TV Operator",
+                    "Cameraman",
+                    "Radio Technician",
+                    "Dubber",
+                    "Voice Over Talent",
+                    "Proof Reader",
+                    "Caricaturist",
+                    "Comics Illustrator",
+                    "Photographer"
+                ]
+            ),
+        ]
+    },
+    CMS: {
+        name: "Community Services",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Community Governance",
+                [
+                    "Barangay Officer",
+                    "Barangay Health Official",
+                    "Social Worker"
+                ]
+            ),
+            createCourseGroup(
+                "Community Support Staff",
+                [
+                    "Barangay Cleaners",
+                    "Barangay Clerk",
+                    "Barangay Aide",
+                    "Rescue Volunteer"
+                ]
+            ),
+        ]
+    },
+    ARC: {
+        name: "Architecture and Construction",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Professional Services",
+                [
+                    "Architect",
+                    "Landscape Architect",
+                    "Interior Designer",
+                    "Surveyor",
+                    "Real Estate Developer"
+                ]
+            ),
+            createCourseGroup(
+                "Construction Service & Support Staff",
+                [
+                    "Foreman",
+                    "Mason",
+                    "Pipe Welder",
+                    "Painter",
+                    "Wood Carver",
+                    "Iron Grill Welder",
+                    "Pottery Maker",
+                    "Building Aide",
+                    "Landscaper",
+                    "Carpenter"
+                ]
+            ),
+        ]
+    },
+    ART: {
+        name: "The Arts",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Performing Arts",
+                [
+                    "Director",
+                    "Artist/Actor",
+                    "Film Maker",
+                    "Entertainer"
+                ]
+            ),
+            createCourseGroup(
+                "Support Staff",
+                [
+                    "Set Designer",
+                    "Lights Designer",
+                    "Costumer Designer"
+                ]
+            ),
+            createCourseGroup(
+                "Painting, Music & Literary Works",
+                [
+                    "Musical Composer",
+                    "Musical Arranger",
+                    "Book Author",
+                    "Water Color Painter"
+                ]
+            ),
+        ]
+    },
+    FAS: {
+        name: "Fashion",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Garments, Linens and Textile",
+                [
+                    "Fashion Designer",
+                    "Master Cutter",
+                    "T-shirt Designer",
+                    "Silk Screen Maker",
+                    "Textile Technician",
+                    "Fabric Wholesaler",
+                    "Curtains/Beddings Sewer"
+                ]
+            ),
+            createCourseGroup(
+                "Hairstyle, Cosmetics and Other Parlor Services",
+                [
+                    "Make-up Artist",
+                    "Hair Stylist",
+                    "Hair Cutter",
+                    "Hair Spa Aide",
+                    "Manicurist"
+                ]
+            ),
+            createCourseGroup(
+                "Jewelry and Fashion Accessories",
+                [
+                    "Jewelry Maker/Goldsmith",
+                    "Beadworks Maker",
+                    "Shoe Maker",
+                    "Bag Maker"
+                ]
+            ),
+        ]
+    },
+    MIL: {
+        name: "Military and Law Enforcement",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Military Services",
+                [
+                    "Military Officer",
+                    "Air Force Officer",
+                    "Military Training Officer",
+                    "Camp Strategist"
+                ]
+            ),
+            createCourseGroup(
+                "Law Enforcement",
+                [
+                    "Police Officer",
+                    "Prison Warden",
+                    "Police Desk Officer",
+                    "Investigator",
+                    "Police Aide",
+                    "Traffic Enforcer",
+                    "Criminologist",
+                    "Fingerprint Analyst"
+                ]
+            ),
+        ]
+    },
+    SPI: {
+        name: "Spiritual Vocation",
+        desc: "",
+        courseGroups: [
+            createCourseGroup(
+                "Specialized Areas",
+                [
+                    "Priest/Pastor/Imam",
+                    "Spiritual Counselor/Nun",
+                    "Charity Worker"
+                ]
+            ),
+        ]
+    },
+}
+
+function createCourseGroup(name, courses) {
+    let courseGroup = {
+        group: name,
+        course: []
+    }
+
+    for (let i = 0; i < courses.length; i++) {
+        courseGroup.course.push(courses[i]);
+    }
+
+    return courseGroup;
+}
