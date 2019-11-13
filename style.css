@@ -71,6 +71,7 @@ button {
     transform: translateX(-50%);
     border-radius: 10px;
     transition: background 250ms ease;
+    margin-top: 1rem;
 }
 
 button:hover {

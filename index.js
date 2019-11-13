@@ -177,6 +177,12 @@ function getCourse(processedResultObj) {
 }
 
 function generateOPForm(courseArr) {
+    gsaForm.style.display = 'none';
+    strandForm.style.display = 'none';
+    
+    let legend = document.createElement('legend');
+    legend.innerText = "OCCUPATIONAL PREFERENCES";
+    opForm.firstElementChild.appendChild(legend);
     for (let i = 0; i < courseArr.length; i++) {
         let div = document.createElement('div');
         let label = document.createElement('label');
