@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -139,4 +144,11 @@ form input:focus {
         width: 100%;
         margin-top: 1rem;
     }
+}
+
+footer {
+    background-color: #17252a;
+    color: #def2f1;
+    padding: 1rem 0;
+    text-align: center;
 }

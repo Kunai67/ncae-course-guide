@@ -28,6 +28,7 @@ gsaForm.addEventListener("submit", function (e) {
 
 opForm.addEventListener("submit", function (e) {
     const result = getHighestRank(makeResultCallback(e, opForm));
+    opForm.firstElementChild.style.display = "none";
     for (let i = 0; i < result.length; i++) {
         let elem = OPObj[result[i].key];
         let heading = document.createElement('h3');
@@ -37,8 +38,8 @@ opForm.addEventListener("submit", function (e) {
         let courseUL = document.createElement('ul');
         let display = document.getElementById('display');
 
-        display.appendChild(heading);
-        display.appendChild(desc);
+        opForm.appendChild(heading);
+        opForm.appendChild(desc);
         
         for (let j = 0; j < elem.courseGroups.length; j++) {
             let course = document.createElement('h4');
@@ -47,11 +48,16 @@ opForm.addEventListener("submit", function (e) {
             for (let k = 0; k < elem.courseGroups[j].course.length; k++) {
                 let courseLi = document.createElement('li');
                 courseLi.innerText = elem.courseGroups[j].course[k];
+                // let link = document.createElement('a');
+                // link.innerText = elem.courseGroups[j].course[k];
+                // link.href = "https://en.wikipedia.org/?curid="
+                // courseLi.appendChild(link);
+                // SearchWiki(elem.courseGroups[j].course[k]).then(value => link.href += value.query.search[0].pageid);
                 courseUL.appendChild(courseLi);
             }
         }
 
-        display.appendChild(courseUL);
+        opForm.appendChild(courseUL);
     }
 })
 
@@ -179,7 +185,7 @@ function getCourse(processedResultObj) {
 function generateOPForm(courseArr) {
     gsaForm.style.display = 'none';
     strandForm.style.display = 'none';
-    
+
     let legend = document.createElement('legend');
     legend.innerText = "OCCUPATIONAL PREFERENCES";
     opForm.firstElementChild.appendChild(legend);
@@ -207,13 +213,13 @@ async function fetchJSON(filename) {
     return json;
 }
 
-// async function SearchWiki(searchKeyword) {
-//     const response = await fetch(
-//         `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${searchKeyword}&format=json&origin=*`
-//     );
-//     const jsonResponse = await response.json();
-//     console.log(jsonResponse);
-// }
+async function SearchWiki(searchKeyword) {
+    const response = await fetch(
+        `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${searchKeyword}&format=json&origin=*`
+    );
+    const jsonResponse = await response.json();
+    return jsonResponse;
+}
 
-// SearchWiki('Nelson Mandela');
-// SearchWiki('Biologist');
+SearchWiki('Nelson Mandela');
+SearchWiki('Biologist');
